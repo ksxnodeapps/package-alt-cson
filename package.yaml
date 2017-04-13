@@ -1,6 +1,6 @@
 name: package-alt-yaml
 description: Use package.yaml instead of package.json
-version: 0.0.5
+version: 0.0.6
 main: help.js
 bin:
   package-alt-yaml: help.js
