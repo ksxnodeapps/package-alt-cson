@@ -1,14 +1,8 @@
 package-alt-yaml — Print this help
-
-Usage:
   $ package-alt-yaml
 
 npm-yaml, ynpm, npm-yaml-update, ynpm-update — Invoke npm command and update package.yaml if necessary
-
-Usage:
   $ ynpm [argv]
 
 npm-yaml-preserve, ynpm-preserve — Invoke npm command but preserve package.yaml
-
-Usage:
   $ ynpm-preserve [argv]
