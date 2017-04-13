@@ -38,8 +38,8 @@ ynpm-preserve [argv]
 **Example**
 
 ```bash
-ynpm install [package] # Won't update package.yaml
-ynpm install --save [package] # Won't update package.yaml
+ynpm-preserve install [package] # Won't update package.yaml
+ynpm-preserve install --save [package] # Won't update package.yaml
 ```
 
 ### Notes
