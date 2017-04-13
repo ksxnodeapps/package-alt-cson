@@ -15,6 +15,7 @@ temp.*
 *.temp
 *.tern-project
 *.tern-project.json
+package.json
 
 # Logs
 logs
