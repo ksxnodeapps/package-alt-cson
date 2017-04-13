@@ -55,11 +55,6 @@ npm init # Now you have a package.json
 js-cson package.json > package.cson # Now you have a package.cson
 ```
 
-#### `package.yml`
-
-This program works only with <code>package<strong>.cson</strong></code>,
-not <code>package<strong>.yml</strong></code>.
-
 ## Development
 
 ### Requirements
