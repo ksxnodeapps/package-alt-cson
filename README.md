@@ -75,3 +75,7 @@ npm install --global package-alt-yaml
 ```bash
 ynpm test
 ```
+
+## License
+
+[MIT License](https://github.com/ksxnodeapps/package-alt-yaml/blob/master/LICENSE.md)
