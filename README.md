@@ -55,3 +55,23 @@ js-yaml package.json > package.yaml # Now you have a package.yaml
 
 This program works only with <code>package<strong>.yaml</strong></code>,
 not <code>package<strong>.yml</strong></code>.
+
+## Development
+
+### Requirements
+
+* Node.js ≥ 6.0.0 and npm
+
+* package-alt-yaml
+
+### Preparation
+
+```bash
+npm install --global package-alt-yaml
+```
+
+### Test
+
+```bash
+ynpm test
+```
