@@ -1,5 +1,5 @@
 # package-alt-yaml
-Quickly manipulate JSON files
+Use `package.yaml` instead of `package.json`
 
 ## Requirements
 
