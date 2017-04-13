@@ -1,8 +1,8 @@
-package-alt-yaml — Print this help
-  $ package-alt-yaml
+package-alt-cson — Print this help
+  $ package-alt-cson
 
-npm-yaml, ynpm, npm-yaml-update, ynpm-update — Invoke npm command and update package.yaml if necessary
-  $ ynpm [argv]
+npm-cson, cnpm, npm-cson-update, cnpm-update — Invoke npm command and update package.cson if necessary
+  $ cnpm [argv]
 
-npm-yaml-preserve, ynpm-preserve — Invoke npm command but preserve package.yaml
-  $ ynpm-preserve [argv]
+npm-cson-preserve, cnpm-preserve — Invoke npm command but preserve package.cson
+  $ cnpm-preserve [argv]
