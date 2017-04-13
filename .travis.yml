@@ -10,9 +10,3 @@ install:
 
 before_script:
   - chmod -R +x sh
-
-before_deploy:
-  - source ./sh/deploy/before.sh
-
-after_deploy:
-  - source ./sh/deploy/after.sh
