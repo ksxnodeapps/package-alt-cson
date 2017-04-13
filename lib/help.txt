@@ -9,3 +9,6 @@ Usage:
   $ ynpm [argv]
 
 npm-yaml-preserve, ynpm-preserve — Invoke npm command but preserve package.yaml
+
+Usage:
+  $ ynpm-preserve [argv]
