@@ -1,5 +1,5 @@
-# package-alt-yaml
-Use `package.yaml` instead of `package.json`
+# package-alt-cson
+Use `package.cson` instead of `package.json`
 
 ## Requirements
 
@@ -8,57 +8,52 @@ Use `package.yaml` instead of `package.json`
 ## Installation
 
 ```bash
-npm install --global package-alt-yaml
+npm install --global package-alt-cson
 ```
 
 ## Command-line usage
 Replace `npm` with the following commands
 
-### `npm-yaml`, `ynpm`, `npm-yaml-update`, `ynpm-update`
-Invoke npm command and update `package.yaml` if necessary
+### `npm-cson`, `cnpm`, `npm-cson-update`, `cnpm-update`
+Invoke npm command and update `package.cson` if necessary
 
 ```bash
-ynpm [argv]
+cnpm [argv]
 ```
 
 **Example**
 
 ```bash
-ynpm install --save [package] # Would update package.yaml
-ynpm install [package] # Won't update package.yaml
+cnpm install --save [package] # Would update package.cson
+cnpm install [package] # Won't update package.cson
 ```
 
-### `npm-yaml-preserve`, `ynpm-preserve`
-Invoke npm command but preserve `package.yaml`
+### `npm-cson-preserve`, `cnpm-preserve`
+Invoke npm command but preserve `package.cson`
 
 ```bash
-ynpm-preserve [argv]
+cnpm-preserve [argv]
 ```
 
 **Example**
 
 ```bash
-ynpm-preserve install [package] # Won't update package.yaml
-ynpm-preserve install --save [package] # Won't update package.yaml
+cnpm-preserve install [package] # Won't update package.cson
+cnpm-preserve install --save [package] # Won't update package.cson
 ```
 
 ### Notes
 
-#### `ynpm init`
+#### `cnpm init`
 
-This program doesn't read data from stdin therefore `ynpm init` won't work.
-In order to init a "ynpm package", do the following instead:
+This program doesn't read data from stdin therefore `cnpm init` won't work.
+In order to init a "cnpm package", do the following instead:
 
 ```bash
-npm i -g js-yaml # CLI to convert json to yaml
+npm i -g js-cson # CLI to convert json to cson
 npm init # Now you have a package.json
-js-yaml package.json > package.yaml # Now you have a package.yaml
+js-cson package.json > package.cson # Now you have a package.cson
 ```
-
-#### `package.yml`
-
-This program works only with <code>package<strong>.yaml</strong></code>,
-not <code>package<strong>.yml</strong></code>.
 
 ## Development
 
@@ -66,20 +61,20 @@ not <code>package<strong>.yml</strong></code>.
 
 * Node.js ≥ 6.0.0 and npm
 
-* package-alt-yaml
+* package-alt-cson
 
 ### Preparation
 
 ```bash
-npm install --global package-alt-yaml
+npm install --global package-alt-cson
 ```
 
 ### Test
 
 ```bash
-ynpm test
+cnpm test
 ```
 
 ## License
 
-[MIT License](https://github.com/ksxnodeapps/package-alt-yaml/blob/master/LICENSE.md)
+[MIT License](https://github.com/ksxnodeapps/package-alt-cson/blob/master/LICENSE.md)

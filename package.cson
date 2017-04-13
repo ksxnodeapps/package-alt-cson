@@ -1,0 +1,43 @@
+name: "package-alt-cson"
+description: "Use package.cson instead of package.json"
+version: "0.0.2"
+main: "help.js"
+bin:
+  "package-alt-cson": "help.js"
+  "npm-cson": "update.js"
+  cnpm: "update.js"
+  "npm-cson-update": "update.js"
+  "cnpm-update": "update.js"
+  "npm-cson-preserve": "preserve.js"
+  "cnpm-preserve": "preserve.js"
+preferGlobal: true
+author: "Hoàng Văn Khải <hvksmr1996@gmail.com>"
+contributors: [
+  "Hoàng Văn Khải <hvksmr1996@gmail.com>"
+]
+license: "MIT"
+repository:
+  type: "git"
+  url: "https://github.com/ksxnodeapps/package-alt-cson.git"
+dependencies:
+  "package-alt": "^0.0.5"
+  cson: "^4.1.0"
+devDependencies:
+  standard: "^10.0.1"
+engines:
+  node: ">= 6.0.0"
+scripts:
+  "remake-package-json": "node sh/remake-package-json"
+  clean: "bash 'sh/clean.sh'"
+  fix: "bash 'sh/fix.sh'"
+  test: "bash 'sh/test.sh'"
+keywords: [
+  "package.cson"
+  "alternate"
+  "npm"
+  "npm-cson"
+  "cnpm"
+]
+bugs:
+  url: "https://github.com/ksxnodeapps/package-alt-cson/issues"
+homepage: "https://github.com/ksxnodeapps/package-alt-cson#readme"
