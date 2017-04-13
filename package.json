@@ -1,11 +1,15 @@
 {
-  "name": "json-property",
-  "description": "Quickly manipulate JSON files",
-  "version": "0.1.0",
+  "name": "package-alt-yaml",
+  "description": "Use package.yaml instead of package.json",
+  "version": "0.0.0",
   "bin": {
-    "json-property": "index.js",
-    "get-json-property": "get.js",
-    "set-json-property": "set.js"
+    "package-alt-yaml": "help.js",
+    "npm-yaml": "update.js",
+    "ynpm": "update.js",
+    "npm-yaml-update": "update.js",
+    "ynpm-update": "update.js",
+    "npm-yaml-preserve": "preserve.js",
+    "ynpm-preserve": "preserve.js"
   },
   "preferGlobal": true,
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
@@ -15,11 +19,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ksxnodeapps/json-property.git"
+    "url": "https://github.com/ksxnodeapps/package-alt-yaml.git"
   },
   "dependencies": {
-    "just-try": "^2.0.1",
-    "get-stdin": "^5.0.1"
+    "package-alt": "^0.0.5",
+    "js-yaml": "^3.8.3"
   },
   "devDependencies": {
     "standard": "^10.0.1"
@@ -31,13 +35,14 @@
     "test": "bash 'sh/test.sh'"
   },
   "keywords": [
-    "json",
-    "property",
-    "properties",
-    "json-cli"
+    "package.yaml",
+    "alternate",
+    "npm",
+    "npm-yaml",
+    "ynpm"
   ],
   "bugs": {
-    "url": "https://github.com/ksxnodeapps/json-property/issues"
+    "url": "https://github.com/ksxnodeapps/package-alt-yaml/issues"
   },
-  "homepage": "https://github.com/ksxnodeapps/json-property#readme"
+  "homepage": "https://github.com/ksxnodeapps/package-alt-yaml#readme"
 }
