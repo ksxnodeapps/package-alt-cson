@@ -1,7 +1,7 @@
 # package-alt-yaml
 Quickly manipulate JSON files
 
-### Requirements
+## Requirements
 
 * Node.js ≥ 6.0.0 and npm
 
