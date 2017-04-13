@@ -14,14 +14,5 @@ before_script:
 before_deploy:
   - source ./sh/deploy/before.sh
 
-deploy:
-  provider: releases
-  api_key: $GITHUB_RELEASE_OAUTH
-  skip_cleanup: true
-  file_glob: true
-  file: $(./sh/deploy/file.sh)
-  on:
-    tags: true
-
 after_deploy:
   - source ./sh/deploy/after.sh
