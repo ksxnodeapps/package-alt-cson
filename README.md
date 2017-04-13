@@ -1,38 +1,38 @@
-# json-property
+# package-alt-yaml
 Quickly manipulate JSON files
 
 ## Installation
 
 ```bash
-npm install --global json-property
+npm install --global package-alt-yaml
 ```
 
 ## Command-line usage
 
-### Print JSON content
+### `npm-yaml`, `ynpm`, `npm-yaml-update`, `ynpm-update`
+Invoke npm command and update `package.yaml` if necessary
 
 ```bash
-get-json-property file.json property_name_1 property_name_2 property_name_3
+ynpm [argv]
 ```
 
+**Example**
+
 ```bash
-get-json-property property_name_1 property_name_2 property_name_3 < file.json
+ynpm install --save [package] # Would update package.yaml
+ynpm install [package] # Won't update package.yaml
 ```
 
+### `npm-yaml-preserve`, `ynpm-preserve`
+Invoke npm command but preserve `package.yaml`
+
 ```bash
-cat file.json | get-json-property property_name_1 property_name_2 property_name_3
+ynpm-preserve [argv]
 ```
 
-### Modify JSON content
+**Example**
 
 ```bash
-set-json-property value file.json property_name_1 property_name_2 property_name_3
-```
-
-```bash
-set-json-property value property_name_1 property_name_2 property_name_3 < input.json > output.json
-```
-
-```bash
-cat input.json | set-json-property value property_name_1 property_name_2 property_name_3 > output.json
+ynpm install [package] # Won't update package.yaml
+ynpm install --save [package] # Won't update package.yaml
 ```
