@@ -8,6 +8,7 @@ npm install --global package-alt-yaml
 ```
 
 ## Command-line usage
+Replace `npm` with the following commands
 
 ### `npm-yaml`, `ynpm`, `npm-yaml-update`, `ynpm-update`
 Invoke npm command and update `package.yaml` if necessary
@@ -36,3 +37,21 @@ ynpm-preserve [argv]
 ynpm install [package] # Won't update package.yaml
 ynpm install --save [package] # Won't update package.yaml
 ```
+
+### Notes
+
+#### `ynpm init`
+
+This program doesn't read data from stdin therefore `ynpm init` won't work.
+In order to init a "ynpm package", do the following instead:
+
+```bash
+npm i -g js-yaml # CLI to convert json to yaml
+npm init # Now you have a package.json
+js-yaml package.json > package.yaml # Now you have a package.yaml
+```
+
+#### `package.yml`
+
+This program works only with <code>package<strong>.yaml</strong></code>,
+not <code>package<strong>.yml</strong></code>.
