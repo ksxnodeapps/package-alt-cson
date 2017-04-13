@@ -1,15 +1,15 @@
-name: package-alt-yaml
-description: Use package.yaml instead of package.json
-version: 0.0.6
+name: package-alt-cson
+description: Use package.cson instead of package.json
+version: 0.0.0
 main: help.js
 bin:
-  package-alt-yaml: help.js
-  npm-yaml: update.js
-  ynpm: update.js
-  npm-yaml-update: update.js
-  ynpm-update: update.js
-  npm-yaml-preserve: preserve.js
-  ynpm-preserve: preserve.js
+  package-alt-cson: help.js
+  npm-cson: update.js
+  cnpm: update.js
+  npm-cson-update: update.js
+  cnpm-update: update.js
+  npm-cson-preserve: preserve.js
+  cnpm-preserve: preserve.js
 preferGlobal: true
 author: Hoàng Văn Khải <hvksmr1996@gmail.com>
 contributors:
@@ -17,10 +17,10 @@ contributors:
 license: MIT
 repository:
   type: git
-  url: 'https://github.com/ksxnodeapps/package-alt-yaml.git'
+  url: 'https://github.com/ksxnodeapps/package-alt-cson.git'
 dependencies:
   package-alt: ^0.0.5
-  js-yaml: ^3.8.3
+  cson: ^4.1.0
 devDependencies:
   standard: ^10.0.1
 engines:
@@ -31,11 +31,11 @@ scripts:
   fix: bash 'sh/fix.sh'
   test: bash 'sh/test.sh'
 keywords:
-  - package.yaml
+  - package.cson
   - alternate
   - npm
-  - npm-yaml
-  - ynpm
+  - npm-cson
+  - cnpm
 bugs:
-  url: 'https://github.com/ksxnodeapps/package-alt-yaml/issues'
-homepage: 'https://github.com/ksxnodeapps/package-alt-yaml#readme'
+  url: 'https://github.com/ksxnodeapps/package-alt-cson/issues'
+homepage: 'https://github.com/ksxnodeapps/package-alt-cson#readme'
