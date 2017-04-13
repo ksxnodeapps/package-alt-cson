@@ -1,13 +1,11 @@
-get-json-property — Print JSON content
+package-alt-yaml — Print this help
 
 Usage:
-  $ get-json-property [file] [properties]
-  $ get-json-property [properties] < [file]
-  $ cat [file] | get-json-property [properties]
+  $ package-alt-yaml
 
-set-json-property — Modify JSON content
+npm-yaml, ynpm, npm-yaml-update, ynpm-update — Invoke npm command and update package.yaml if necessary
 
 Usage:
-  $ set-json-property [value] [file] [properties]
-  $ set-json-property [value] [properties] < [input] > [output]
-  $ cat [input] | set-json-property [value] [properties] > [output]
+  $ ynpm [argv]
+
+npm-yaml-preserve, ynpm-preserve — Invoke npm command but preserve package.yaml

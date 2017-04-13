@@ -2,6 +2,7 @@
   "name": "package-alt-yaml",
   "description": "Use package.yaml instead of package.json",
   "version": "0.0.0",
+  "main": "help.js",
   "bin": {
     "package-alt-yaml": "help.js",
     "npm-yaml": "update.js",
